@@ -1,0 +1,38 @@
+/*css/aquivodeestilo externo*/
+body{
+    background-color: rgb(24, 23, 23);
+    font: normal 15pt Arial;
+    color: beige;
+}
+
+header {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 32px 0;
+}
+
+section {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgb(68, 73, 72);
+    border-radius: 10px;
+    padding:  15px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
+}
+
+div{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+}
+
+#foto{ 
+    width: 250px;  
+    height: 250px;
+    border-radius: 50%;
+    }
