@@ -1,9 +1,10 @@
 //script/aquivodescript externo
+var data = new Date()
+var ano = data.getFullYear() //ano atual
+var fAno = document.getElementById('txtano') //oq vai ser digitado na caixa de texto
+var res = document.querySelector('div#res')
+
 function verificar() {
-    var data = new Date()
-    var ano = data.getFullYear() //ano atual
-    var fAno = document.getElementById('txtano') //oq vai ser digitado na caixa de texto
-    var res = document.querySelector('div#res')
     if (fAno.value.length == 0 || fAno.value > ano) {
         window.alert('[ERRO] Verifique os dados e tente novamente!')
     } else {
