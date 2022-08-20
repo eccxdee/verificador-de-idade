@@ -1,7 +1,7 @@
 //script/aquivodescript externo
 var data = new Date()
 var ano = data.getFullYear() //ano atual
-var fAno = document.getElementById('txtano') //oq vai ser digitado na caixa de texto
+var fAno = document.getElementById('txtano') //ano digitado na caixa do tipo number com id = 'txtano'
 var res = document.querySelector('div#res')
 
 function verificar() {
@@ -24,8 +24,12 @@ function verificar() {
             } else if (idade < 50) {
                 //adulto
                 img.setAttribute('src', 'adultoM.jpg')
+            }  else if (idade < 100) {
+                //velho
+                img.setAttribute('src', 'velhoM.jpg')
             }
             res.innerHTML= `Com ${idade} anos, você se identifica pelo gênero ${gênero}.`
+        
         } else if (fsex[1].checked) {
             gênero = 'Feminino'
             if (idade >= 0 && idade < 12) {
@@ -37,8 +41,12 @@ function verificar() {
             } else if (idade < 50) {
                 //adulto
                 img.setAttribute('src', 'adultoF.jpg')
+            } else if (idade < 100) {
+                //vovó
+                img.setAttribute('src', 'velhoF.png')
             }
             res.innerHTML= `Com ${idade} anos, você se identifica pelo gênero ${gênero}.`
+        
         } if (fsex[2]. checked) {
             gênero = 'outro'
             if (idade >= 0 && idade < 12) {
@@ -50,8 +58,12 @@ function verificar() {
             } else if (idade < 50) {
                 //adulto
                 img.setAttribute('src', 'adultoO.jpg')
+            } else if (idade < 100) {
+                //vovô
+                img.setAttribute('src', 'velhoM.jpg')
             }
             res.innerHTML= `Com ${idade} anos, você se identifica por ${gênero} gênero.`
+        
         }
         res.style.textAlign = 'center'
         res.appendChild(img)
